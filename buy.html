@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>YOUR PROPERTY - Buy</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+
+            <h1>YOUR PROPERTY</h1>
+
+            <p>Properties For Sale</p>
+
+        </div>
+
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="buy.html">Buy</a>
+
+            <a href="rent.html">Rent</a>
+
+            <a href="about.html">About</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="favorites.html">
+                ❤️ Favourites
+            </a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- ================= BUY INTRO ================= -->
+
+    <section class="page-intro">
+
+        <h2>Properties Available For Buy</h2>
+
+        <p>
+            Find your dream property for purchase.
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= BUY PROPERTIES ================= -->
+
+    <section>
+
+        <div id="buy-properties" class="property-container">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ADD PROPERTY FOR SALE ================= -->
+
+    <section class="add-property-section">
+
+        <h2>Add Your Property For Sale</h2>
+
+        <p>
+            Enter your property information below.
+        </p>
+
+
+        <form id="buy-property-form">
+
+
+            <!-- PROPERTY NAME -->
+
+            <label>
+                Property Name
+            </label>
+
+            <input type="text" id="buy-name" placeholder="Enter property name" required>
+
+
+
+            <!-- LOCATION -->
+
+            <label>
+                Location
+            </label>
+
+            <input type="text" id="buy-location" placeholder="Enter location" required>
+
+
+
+            <!-- PROPERTY TYPE -->
+
+            <label>
+                Property Type
+            </label>
+
+            <select id="buy-property-type" required>
+
+                <option value="">
+                    Select Property Type
+                </option>
+
+                <option value="house">
+                    House
+                </option>
+
+                <option value="apartment">
+                    Apartment
+                </option>
+
+                <option value="flat">
+                    Flat
+                </option>
+
+                <option value="other">
+                    Other
+                </option>
+
+            </select>
+
+
+
+
+
+
+
+            <!-- PRICE -->
+
+            <label>
+                Property Price
+            </label>
+
+            <input type="number" id="buy-price" placeholder="Enter property price" required>
+
+
+
+            <!-- DESCRIPTION -->
+
+            <label>
+                Description
+            </label>
+
+            <textarea id="buy-description" placeholder="Enter property description" required></textarea>
+
+
+
+            <!-- MULTIPLE IMAGES -->
+
+            <label>
+                Select Property Images
+            </label>
+
+            <p class="small-text">
+
+                You can select multiple images.
+
+            </p>
+
+
+            <input type="file" id="buy-images" accept="image/*" multiple>
+
+
+            <!-- SUBMIT -->
+
+            <button type="submit">
+
+                Add Property For Sale
+
+            </button>
+
+
+        </form>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            YOUR PROPERTY. All rights are reserved.
+        </p>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

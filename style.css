@@ -1,0 +1,454 @@
+/*remove default spacing*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*whole webpage*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/*navigation bar*/
+header {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*website name*/
+header h1 {
+    font-size: 28px;
+}
+
+/*navigation links*/
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+
+}
+
+/*navigation hover effect*/
+nav a:hover {
+    color: #ffd166;
+}
+
+/*hero section*/
+body>section:first-of-type {
+    background-color: #dbeafe;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/*hero heading*/
+body>section:first-of-type h2 {
+    font-size: 40px;
+    color: #1e3a5f;
+    margin-bottom: 15px;
+
+}
+
+/*hero paragraph*/
+body>section :first-of-type p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/*search box*/
+body>select :first-of-type input {
+    width: 300px;
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/*buttons*/
+button {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button hover */
+button:hover {
+    background-color: #142840;
+}
+
+/* All sections */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Section headings */
+section h2 {
+    color: #1e3a5f;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+/* Property boxes */
+section>div {
+    display: inline-block;
+    background-color: white;
+    width: 280px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    vertical-align: top;
+}
+
+/* Property images */
+section>div img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Property name */
+section>div h3 {
+    color: #1e3a5f;
+    margin: 15px 0 10px;
+}
+
+/* Property information */
+section>div p {
+    margin: 8px;
+}
+
+/* About section */
+section:nth-of-type(3) {
+    background-color: white;
+}
+
+section:nth-of-type(3) p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+/* Contact form */
+form {
+    background-color: white;
+    width: 400px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Form labels */
+form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* Form inputs */
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile screen */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 8px;
+    }
+
+    body>section:first-of-type h2 {
+        font-size: 30px;
+    }
+
+    body>section:first-of-type input {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    section>div {
+        width: 90%;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+/* =================================
+   PROPERTY CARD SPACING
+   ================================= */
+
+#buy-properties,
+#rent-properties {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+
+    padding: 20px;
+    justify-content: center;
+}
+
+
+.property-card {
+
+    width: 280px;
+
+    padding: 20px;
+
+    margin: 0;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.property-card img {
+
+    width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+}
+
+
+.property-card button {
+
+    margin: 5px;
+
+    padding: 8px 12px;
+
+    cursor: pointer;
+
+}
+
+.image-slider {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.property-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.previous-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.previous-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+
+/* ==========================================
+   PROPERTY IMAGE SLIDER
+   ========================================== */
+
+/* =====================================
+   IMAGE SLIDER
+   ===================================== */
+
+.image-slider {
+    position: relative;
+    width: 300px;
+    height: 220px;
+    overflow: hidden;
+}
+
+
+.image-slider .property-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* BOTH ARROW BUTTONS */
+
+.image-slider .previous-button,
+.image-slider .next-button {
+
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: 9999;
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 25px;
+
+    background: white;
+
+    color: black;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* LEFT */
+
+.image-slider .previous-button {
+
+    left: 10px;
+}
+
+
+/* RIGHT */
+
+.image-slider .next-button {
+
+    right: 10px;
+}
+
+
+/* Make sure arrows receive clicks */
+
+.image-slider .previous-button,
+.image-slider .next-button {
+
+    pointer-events: auto;
+
+}
+
+.image-slider {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-slider img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+/* PROPERTY DETAILS MODAL */
+
+.property-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.property-modal-content {
+    background-color: white;
+    width: 450px;
+    max-width: 90%;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.property-modal-content h2 {
+    color: #1f4168;
+    margin-bottom: 20px;
+}
+
+.property-modal-content p {
+    margin: 12px 0;
+    font-size: 17px;
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.close-modal:hover {
+    color: red;
+}
